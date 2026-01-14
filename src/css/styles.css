@@ -5,15 +5,22 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  background-image: url("../../assets/images/mountains-pexels.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
+
