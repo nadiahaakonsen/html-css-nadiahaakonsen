@@ -12,7 +12,9 @@ html, body {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 550;
+  font-style: normal;
 }
 
 body {
@@ -67,8 +69,16 @@ nav ul li a {
   padding-top: 10px;
 }
 
+.nav-icons {
+  display: block;
+  justify-content: space-between;
+  padding: 40px;
+  padding-top: 16px;
+  color: #0A3641;
+}
+
 bg-logo {
-  display: flex;
+  display: block;
   object-position: center;
   height: 100px;
   width: auto;
@@ -83,6 +93,10 @@ height: auto;
 
 main {
   background-color:#D9D9CF;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 20px 20px;
 }
 
 h1 {
@@ -93,10 +107,11 @@ h1 {
 }
 
 best-products {
-display: flex;
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -104,4 +119,11 @@ display: flex;
 best-products img {
   width: 100px;
   height: auto;
+}
+
+au-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
